@@ -11,7 +11,6 @@
 		ACB9345B2760F348003144B2 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9345A2760F348003144B2 /* DiscoveryView.swift */; };
 		ACB9345D2760F349003144B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB9345C2760F349003144B2 /* Assets.xcassets */; };
 		ACB934602760F349003144B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB9345F2760F349003144B2 /* Preview Assets.xcassets */; };
-		ACB93468276113AB003144B2 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = ACB93467276113AB003144B2 /* FloatingPanel */; };
 		ACB9347427611577003144B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347327611577003144B2 /* Extensions.swift */; };
 		ACB9347627611886003144B2 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347527611886003144B2 /* TabView.swift */; };
 		ACB93478276118C3003144B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB93477276118C3003144B2 /* HomeView.swift */; };
@@ -37,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACB93468276113AB003144B2 /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +99,6 @@
 			);
 			name = MapsTest;
 			packageProductDependencies = (
-				ACB93467276113AB003144B2 /* FloatingPanel */,
 			);
 			productName = MapsTest;
 			productReference = ACB934552760F348003144B2 /* Digital Membership.app */;
@@ -132,7 +129,6 @@
 			);
 			mainGroup = ACB9344C2760F348003144B2;
 			packageReferences = (
-				ACB93466276113AB003144B2 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
 			);
 			productRefGroup = ACB934562760F348003144B2 /* Products */;
 			projectDirPath = "";
@@ -369,25 +365,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		ACB93466276113AB003144B2 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scenee/FloatingPanel";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		ACB93467276113AB003144B2 /* FloatingPanel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = ACB93466276113AB003144B2 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
-			productName = FloatingPanel;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACB9344D2760F348003144B2 /* Project object */;
 }
