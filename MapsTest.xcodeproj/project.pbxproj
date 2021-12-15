@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2573E62769F5E000CB22F2 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E22769F5E000CB22F2 /* TabBarItem.swift */; };
+		AC2573E72769F5E000CB22F2 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E32769F5E000CB22F2 /* CustomTabBarView.swift */; };
+		AC2573E82769F5E000CB22F2 /* CustomTabBarContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E52769F5E000CB22F2 /* CustomTabBarContainerView.swift */; };
+		AC2573E92769F5E000CB22F2 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E12769F5E000CB22F2 /* TabBarItemPreferenceKey.swift */; };
+		AC2573EA2769F5E000CB22F2 /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E42769F5E000CB22F2 /* CustomTabBarItemView.swift */; };
+		AC2573ED2769F85800CB22F2 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573EC2769F85800CB22F2 /* BookView.swift */; };
+		AC4FE374276221310070DBAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4FE373276221310070DBAF /* User.swift */; };
+		AC6A83B52763BAE5004765DF /* FloatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A83B42763BAE5004765DF /* FloatingView.swift */; };
+		AC6A83B72763BBC0004765DF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A83B62763BBC0004765DF /* MapView.swift */; };
 		ACB934592760F348003144B2 /* MapsTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB934582760F348003144B2 /* MapsTestApp.swift */; };
 		ACB9345B2760F348003144B2 /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9345A2760F348003144B2 /* DiscoveryView.swift */; };
 		ACB9345D2760F349003144B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB9345C2760F349003144B2 /* Assets.xcassets */; };
 		ACB934602760F349003144B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB9345F2760F349003144B2 /* Preview Assets.xcassets */; };
 		ACB9347427611577003144B2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347327611577003144B2 /* Extensions.swift */; };
-		ACB9347627611886003144B2 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347527611886003144B2 /* TabView.swift */; };
+		ACB9347627611886003144B2 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347527611886003144B2 /* RootView.swift */; };
 		ACB93478276118C3003144B2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB93477276118C3003144B2 /* HomeView.swift */; };
 		ACB9347A27611ED1003144B2 /* DiscoverUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347927611ED1003144B2 /* DiscoverUserView.swift */; };
 		ACB9347C27611FE7003144B2 /* DiscoverUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9347B27611FE7003144B2 /* DiscoverUsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ACB934552760F348003144B2 /* Digital Membership.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Digital Membership.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC2573E12769F5E000CB22F2 /* TabBarItemPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemPreferenceKey.swift; sourceTree = "<group>"; };
+		AC2573E22769F5E000CB22F2 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		AC2573E32769F5E000CB22F2 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		AC2573E42769F5E000CB22F2 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
+		AC2573E52769F5E000CB22F2 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
+		AC2573EC2769F85800CB22F2 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		AC4FE373276221310070DBAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC6A83B42763BAE5004765DF /* FloatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
+		AC6A83B62763BBC0004765DF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		ACB934552760F348003144B2 /* Discovery Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discovery Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB934582760F348003144B2 /* MapsTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTestApp.swift; sourceTree = "<group>"; };
 		ACB9345A2760F348003144B2 /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
 		ACB9345C2760F349003144B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB9345F2760F349003144B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACB9347327611577003144B2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		ACB9347527611886003144B2 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		ACB9347527611886003144B2 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		ACB93477276118C3003144B2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ACB9347927611ED1003144B2 /* DiscoverUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUserView.swift; sourceTree = "<group>"; };
 		ACB9347B27611FE7003144B2 /* DiscoverUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUsersView.swift; sourceTree = "<group>"; };
@@ -42,6 +60,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC2573EB2769F5E800CB22F2 /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AC2573E52769F5E000CB22F2 /* CustomTabBarContainerView.swift */,
+				AC2573E42769F5E000CB22F2 /* CustomTabBarItemView.swift */,
+				AC2573E32769F5E000CB22F2 /* CustomTabBarView.swift */,
+				AC2573E22769F5E000CB22F2 /* TabBarItem.swift */,
+				AC2573E12769F5E000CB22F2 /* TabBarItemPreferenceKey.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
 		ACB9344C2760F348003144B2 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +83,7 @@
 		ACB934562760F348003144B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACB934552760F348003144B2 /* Digital Membership.app */,
+				ACB934552760F348003144B2 /* Discovery Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,15 +91,20 @@
 		ACB934572760F348003144B2 /* MapsTest */ = {
 			isa = PBXGroup;
 			children = (
+				AC2573EB2769F5E800CB22F2 /* CustomTabBar */,
 				ACB934582760F348003144B2 /* MapsTestApp.swift */,
-				ACB9347527611886003144B2 /* TabView.swift */,
+				ACB9347527611886003144B2 /* RootView.swift */,
 				ACB93477276118C3003144B2 /* HomeView.swift */,
 				ACB9345A2760F348003144B2 /* DiscoveryView.swift */,
-				ACB9345C2760F349003144B2 /* Assets.xcassets */,
-				ACB9345E2760F349003144B2 /* Preview Content */,
 				ACB9347327611577003144B2 /* Extensions.swift */,
+				AC6A83B42763BAE5004765DF /* FloatingView.swift */,
 				ACB9347927611ED1003144B2 /* DiscoverUserView.swift */,
 				ACB9347B27611FE7003144B2 /* DiscoverUsersView.swift */,
+				AC4FE373276221310070DBAF /* User.swift */,
+				AC2573EC2769F85800CB22F2 /* BookView.swift */,
+				AC6A83B62763BBC0004765DF /* MapView.swift */,
+				ACB9345C2760F349003144B2 /* Assets.xcassets */,
+				ACB9345E2760F349003144B2 /* Preview Content */,
 			);
 			path = MapsTest;
 			sourceTree = "<group>";
@@ -101,7 +136,7 @@
 			packageProductDependencies = (
 			);
 			productName = MapsTest;
-			productReference = ACB934552760F348003144B2 /* Digital Membership.app */;
+			productReference = ACB934552760F348003144B2 /* Discovery Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -159,10 +194,19 @@
 				ACB9347427611577003144B2 /* Extensions.swift in Sources */,
 				ACB9345B2760F348003144B2 /* DiscoveryView.swift in Sources */,
 				ACB9347A27611ED1003144B2 /* DiscoverUserView.swift in Sources */,
+				AC2573EA2769F5E000CB22F2 /* CustomTabBarItemView.swift in Sources */,
+				AC2573E72769F5E000CB22F2 /* CustomTabBarView.swift in Sources */,
 				ACB9347C27611FE7003144B2 /* DiscoverUsersView.swift in Sources */,
-				ACB9347627611886003144B2 /* TabView.swift in Sources */,
+				AC2573E62769F5E000CB22F2 /* TabBarItem.swift in Sources */,
+				AC4FE374276221310070DBAF /* User.swift in Sources */,
+				AC2573E92769F5E000CB22F2 /* TabBarItemPreferenceKey.swift in Sources */,
+				ACB9347627611886003144B2 /* RootView.swift in Sources */,
 				ACB93478276118C3003144B2 /* HomeView.swift in Sources */,
+				AC2573E82769F5E000CB22F2 /* CustomTabBarContainerView.swift in Sources */,
+				AC6A83B72763BBC0004765DF /* MapView.swift in Sources */,
+				AC6A83B52763BAE5004765DF /* FloatingView.swift in Sources */,
 				ACB934592760F348003144B2 /* MapsTestApp.swift in Sources */,
+				AC2573ED2769F85800CB22F2 /* BookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +351,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sezertunca.MapsTest;
-				PRODUCT_NAME = "Digital Membership";
+				PRODUCT_NAME = "Discovery Demo";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,7 +380,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sezertunca.MapsTest;
-				PRODUCT_NAME = "Digital Membership";
+				PRODUCT_NAME = "Discovery Demo";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

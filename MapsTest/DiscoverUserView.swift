@@ -23,9 +23,9 @@ struct DiscoverUserView: View {
                     .font(.footnote)
                     .fontWeight(.light)
                 Text(user.occupation)
-                    .font(.footnote)
-                    .fontWeight(.light)
+                    
             }
+            
             Text(user.location)
                 .fontWeight(.light)
                 .font(.footnote)
@@ -38,6 +38,9 @@ struct DiscoverUserView: View {
 struct DiscoverUserView_Previews: PreviewProvider {
     static var previews: some View {
         
-        DiscoverUserView(user: User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 48.8566, longitude: 2.3522)))
+        DiscoverUserView(user: User(fullName: "Brandon Septimus",
+                                    occupation: "CTO",
+                                    location: "Barcelona, Spain",
+                                    coordinate: .init(latitude: 48.8566, longitude: 2.3522)))
     }
 }

@@ -1,18 +1,7 @@
 import SwiftUI
 import MapKit
 
-struct User: Identifiable {
-    let id = UUID()
-    let fullName: String
-    let occupation: String
-    let location: String
-    let coordinate: CLLocationCoordinate2D
-    let imageUrl = "https://picsum.photos/200"
-}
-
 struct DiscoveryView: View {
-    
-    @State var isFullScreen = false
     
     private let todaysPicks: [User] = [
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 48.8566, longitude: 2.3522)),
@@ -20,35 +9,27 @@ struct DiscoveryView: View {
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 48.8566, longitude: 6.4256)),
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 50.8566, longitude: 7.4256))
     ]
-
     private let newMembers: [User] = [
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 49.8566, longitude: 2.8522)),
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 41.7640, longitude: 4.2357)),
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 43.8566, longitude: 5.3256)),
         User(fullName: "Brandon Septimus", occupation: "CTO", location: "Barcelona, Spain", coordinate: .init(latitude: 54.8566, longitude: 6.4256))
     ]
-    
     private var allUsers: [User] {
         var users = todaysPicks
         users.append(contentsOf: newMembers)
         return users
     }
-
     
-    @State private var userTrackingMode: MapUserTrackingMode = .follow
-    @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 48.8566, longitude: 4.5000),
-        span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
-    )
+    @State var isFullScreen = false
     
     var body: some View {
         GeometryReader { geometry in
             NavigationView {
                 ZStack(alignment: .top) {
                     ZStack(alignment: .bottom) {
-                        mapView
-                        floatingView(geometry)
-                        
+                        MapView(users: allUsers)
+                        floatingView2(geometry)
                     }
                     Rectangle()
                         .fill(Color.sohoWhite)
@@ -56,6 +37,7 @@ struct DiscoveryView: View {
                         .opacity(isFullScreen ? 1 : 0)
                         .ignoresSafeArea()
                 }
+                .navigationBarTitleDisplayMode(.inline)
                 .ignoresSafeArea()
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
@@ -77,34 +59,26 @@ struct DiscoveryView: View {
         }
     }
     
-    
-    private var mapView: some View {
-        Map(coordinateRegion: $region, annotationItems: allUsers) { user in
-//            MapMarker(coordinate: city.coordinate, tint: .red)
-            MapAnnotation(
-                coordinate: user.coordinate,
-                anchorPoint: CGPoint(x: 0.5, y: 0.5)
-            ) {
-                ZStack {
-                    Circle()
-                        .stroke(Color.white)
-                        .frame(width: 44, height: 44)
-                    
-                    AsyncImage(url: URL(string: user.imageUrl))
-                        .frame(width: 44, height: 44)
-                        .clipped()
-                        .clipShape(Circle())
+    private func floatingView2(_ geometry: GeometryProxy) -> some View {
+        
+        FloatingView(
+            ScrollView {
+                LazyVStack(spacing: 25) {
+                    DiscoverUsersView(title: "Today's Picks", users: todaysPicks)
+                    DiscoverUsersView(title: "New members", users: newMembers)
                 }
             }
-        }
+            .padding()
+            .frame(width: geometry.size.width)
+            ,geo: geometry
+        )
     }
-    
+
     private func floatingView(_ geometry: GeometryProxy) -> some View {
         
         VStack {
             ZStack(alignment: .top) {
-                RoundedRectangle(cornerRadius: isFullScreen ? 0 : 20)
-                    .fill(Color.white)
+                
                 
                 HStack {
                     Spacer()
@@ -115,14 +89,7 @@ struct DiscoveryView: View {
                 }
                 .padding(.top, 8)
                                 
-                ScrollView {
-                    LazyVStack(spacing: 25) {
-                        DiscoverUsersView(title: "Today's Picks", users: todaysPicks)
-                        DiscoverUsersView(title: "New members", users: newMembers)
-                    }
-                }
-                .padding()
-                .frame(width: geometry.size.width)
+                
             }
             .frame(height: isFullScreen ? (geometry.size.height - geometry.safeAreaInsets.top) : geometry.size.height * 0.55)
             .onTapGesture {
@@ -135,11 +102,10 @@ struct DiscoveryView: View {
     
     private var filterNavButton: some View {
         ZStack(alignment: .center) {
-            Circle()
-                .fill(.white)
-                .frame(width: 35, height: 35)
-            
-            
+
+                Circle()
+                .fill(.white.opacity(0.7))
+                    .frame(width: 35, height: 35)
                 Image(systemName: "line.3.horizontal.decrease")
                 .resizable()
                 .scaledToFit()
@@ -151,7 +117,7 @@ struct DiscoveryView: View {
     private var navTitle: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25)
-                .fill(.white)
+                .fill(.white.opacity(0.7))
             Text("Connect")
                 .font(.footnote)
         }
@@ -161,7 +127,7 @@ struct DiscoveryView: View {
     private var searchNavButton: some View {
         ZStack(alignment: .center) {
             Circle()
-                .fill(.white)
+                .fill(.white.opacity(0.7))
                 .frame(width: 35, height: 35)
             
             Image(systemName: "magnifyingglass")
@@ -170,10 +136,6 @@ struct DiscoveryView: View {
                 .frame(width:15, height: 15)
             .foregroundColor(.black)
         }
-    }
-    
-    private var floatingPanelBodyView: some View {
-        Text("Grid")
     }
 }
 
