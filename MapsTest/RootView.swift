@@ -9,16 +9,17 @@ import SwiftUI
 
 struct RootView: View {
     var body: some View {
-        CustomTabBarContainerView {
-            HomeView()
-                .tabBarItem(tab: .home)
-        
-            DiscoveryView()
-                .tabBarItem(tab: .connect)
-            
-            BookView()
-                .tabBarItem(tab: .book)
-        }
+        TabBarView()
+//        CustomTabBarContainerView {
+//            HomeView()
+//                .tabBarItem(tab: .home, selection: <#Binding<TabBarItem>#>)
+//
+//            DiscoveryView()
+//                .tabBarItem(tab: .connect)
+//
+//            BookView()
+//                .tabBarItem(tab: .book)
+//        }
     }
 }
 

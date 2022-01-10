@@ -13,6 +13,7 @@
 		AC2573E92769F5E000CB22F2 /* TabBarItemPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E12769F5E000CB22F2 /* TabBarItemPreferenceKey.swift */; };
 		AC2573EA2769F5E000CB22F2 /* CustomTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573E42769F5E000CB22F2 /* CustomTabBarItemView.swift */; };
 		AC2573ED2769F85800CB22F2 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2573EC2769F85800CB22F2 /* BookView.swift */; };
+		AC422BCC278C6D480043EA31 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC422BCB278C6D480043EA31 /* TabBarView.swift */; };
 		AC4FE374276221310070DBAF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4FE373276221310070DBAF /* User.swift */; };
 		AC6A83B52763BAE5004765DF /* FloatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A83B42763BAE5004765DF /* FloatingView.swift */; };
 		AC6A83B72763BBC0004765DF /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A83B62763BBC0004765DF /* MapView.swift */; };
@@ -34,6 +35,7 @@
 		AC2573E42769F5E000CB22F2 /* CustomTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemView.swift; sourceTree = "<group>"; };
 		AC2573E52769F5E000CB22F2 /* CustomTabBarContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarContainerView.swift; sourceTree = "<group>"; };
 		AC2573EC2769F85800CB22F2 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		AC422BCB278C6D480043EA31 /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		AC4FE373276221310070DBAF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AC6A83B42763BAE5004765DF /* FloatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
 		AC6A83B62763BBC0004765DF /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 			path = CustomTabBar;
 			sourceTree = "<group>";
 		};
+		AC422BC6278C52DC0043EA31 /* CustomTabbar2 */ = {
+			isa = PBXGroup;
+			children = (
+				AC422BCB278C6D480043EA31 /* TabBarView.swift */,
+			);
+			path = CustomTabbar2;
+			sourceTree = "<group>";
+		};
 		ACB9344C2760F348003144B2 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		ACB934572760F348003144B2 /* MapsTest */ = {
 			isa = PBXGroup;
 			children = (
+				AC422BC6278C52DC0043EA31 /* CustomTabbar2 */,
 				AC2573EB2769F5E800CB22F2 /* CustomTabBar */,
 				ACB934582760F348003144B2 /* MapsTestApp.swift */,
 				ACB9347527611886003144B2 /* RootView.swift */,
@@ -201,6 +212,7 @@
 				AC4FE374276221310070DBAF /* User.swift in Sources */,
 				AC2573E92769F5E000CB22F2 /* TabBarItemPreferenceKey.swift in Sources */,
 				ACB9347627611886003144B2 /* RootView.swift in Sources */,
+				AC422BCC278C6D480043EA31 /* TabBarView.swift in Sources */,
 				ACB93478276118C3003144B2 /* HomeView.swift in Sources */,
 				AC2573E82769F5E000CB22F2 /* CustomTabBarContainerView.swift in Sources */,
 				AC6A83B72763BBC0004765DF /* MapView.swift in Sources */,
